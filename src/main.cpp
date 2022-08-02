@@ -103,7 +103,7 @@ void initMP3Serial(void *params) {
 void playSound() {
   player.setPrompt(false);
   player.setLED(false);
-  player.setVol(12);
+  player.setVol(14);
   player.switchFunction(player.MUSIC);
   player.setPlayMode(player.SINGLE);
   player.playFileNum(2);
@@ -191,7 +191,7 @@ void setup() {
 
   Serial.print("Connecting to " WIFI_SSID);
   while (WiFi.status() != WL_CONNECTED) {
-    Serial.print('.');
+    // Serial.print('.');
     delay(500);
 
     // if wifi is taking a long time to connect, just give up to save battery
@@ -219,7 +219,7 @@ void setup() {
 
   Serial.println("Sending email...");
 
-  if (btnPresses > 30 && selected_recipient_index < num_emails) {
+  if (btnPresses > 10 && selected_recipient_index < num_emails) {
     // additionally send email to randomly selected recipient
     sendEmail(baseMsg, email_recips[selected_recipient_index],
               email_addrs[selected_recipient_index]);
@@ -240,7 +240,7 @@ void setup() {
   while (millis() - bootTime < 7500)
     ;
 
-    killPower();
+  killPower();
 }
 
 void loop() {
