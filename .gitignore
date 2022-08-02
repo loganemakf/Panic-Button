@@ -1,0 +1,5 @@
+.pio
+.vscode/
+src/secrets.hpp
+Panic_Button_v1.code-workspace
+lib/
