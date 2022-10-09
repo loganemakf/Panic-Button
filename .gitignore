@@ -3,3 +3,5 @@
 src/secrets.hpp
 Panic_Button_v1.code-workspace
 lib/
+*.icloud
+How-to-order-PCB.txt
