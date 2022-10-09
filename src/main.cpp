@@ -16,6 +16,7 @@ typedef esp_mail_session_config_t ESP_Mail_Session;
 #ifndef SECRETS_HPP
 #define WIFI_SSID "your_wifi_ssid"
 #define WIFI_PASS "your_wifi_pass"
+const char *my_name = "your_name";
 const char *my_email = "your_email_addr";
 const char *email_recips[] = {"other", "email", "recipients"};
 const char *email_addrs[] = {"other", "email", "addrs"};
